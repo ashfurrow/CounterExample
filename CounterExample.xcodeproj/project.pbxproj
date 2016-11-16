@@ -21,6 +21,7 @@
 		3C135C601D547F7700EC9FC9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C135C5F1D547F7700EC9FC9 /* AppState.swift */; };
 		3C135C651D55C92200EC9FC9 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C135C641D55C92200EC9FC9 /* Actions.swift */; };
 		3C135C671D55C94300EC9FC9 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C135C661D55C94300EC9FC9 /* CounterReducer.swift */; };
+		5E877FEE1DDCB29B00A2E376 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E877FED1DDCB29B00A2E376 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,7 @@
 		3C135C5F1D547F7700EC9FC9 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppState.swift; path = State/AppState.swift; sourceTree = "<group>"; };
 		3C135C641D55C92200EC9FC9 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Actions.swift; path = Actions/Actions.swift; sourceTree = "<group>"; };
 		3C135C661D55C94300EC9FC9 /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CounterReducer.swift; path = Reducers/CounterReducer.swift; sourceTree = "<group>"; };
+		5E877FED1DDCB29B00A2E376 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				3C135C611D55C90900EC9FC9 /* Actions */,
 				3C135C2F1D53E29400EC9FC9 /* AppDelegate.swift */,
 				3C135C311D53E29400EC9FC9 /* ViewController.swift */,
+				5E877FED1DDCB29B00A2E376 /* TableViewCell.swift */,
 				3C135C331D53E29400EC9FC9 /* Main.storyboard */,
 				3C135C361D53E29400EC9FC9 /* Assets.xcassets */,
 				3C135C381D53E29400EC9FC9 /* LaunchScreen.storyboard */,
@@ -204,6 +207,7 @@
 				3C135C601D547F7700EC9FC9 /* AppState.swift in Sources */,
 				3C135C671D55C94300EC9FC9 /* CounterReducer.swift in Sources */,
 				3C135C651D55C92200EC9FC9 /* Actions.swift in Sources */,
+				5E877FEE1DDCB29B00A2E376 /* TableViewCell.swift in Sources */,
 				3C135C321D53E29400EC9FC9 /* ViewController.swift in Sources */,
 				3C135C301D53E29400EC9FC9 /* AppDelegate.swift in Sources */,
 			);
