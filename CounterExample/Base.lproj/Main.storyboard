@@ -13,7 +13,7 @@
         <!--Root View Controller-->
         <scene sceneID="Jrh-DA-4Js">
             <objects>
-                <tableViewController id="IYC-Dw-0s7" sceneMemberID="viewController">
+                <tableViewController id="IYC-Dw-0s7" customClass="ViewController" customModule="CounterExample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ucG-Sh-MIE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="qzY-A3-3ki">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="p8b-Fk-PTX"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="p8b-Fk-PTX">
+                            <connections>
+                                <action selector="addCounter:" destination="IYC-Dw-0s7" id="GJa-nL-AVP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kf2-YS-ERC" userLabel="First Responder" sceneMemberID="firstResponder"/>

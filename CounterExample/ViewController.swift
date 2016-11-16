@@ -27,6 +27,9 @@ class ViewController: UITableViewController, StoreSubscriber {
         // when the state changes, the UI is updated to reflect the current state
         tableView.reloadData()
     }
+    
+    @IBAction func addCounter(_ sender: UIBarButtonItem) {
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
