@@ -49,5 +49,11 @@ class ViewController: UITableViewController, StoreSubscriber {
 
         return cell
     }
+
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if case UITableViewCellEditingStyle.delete = editingStyle {
+            mainStore.dispatch(CounterActionDelete(index: indexPath.row))
+        }
+    }
 }
 

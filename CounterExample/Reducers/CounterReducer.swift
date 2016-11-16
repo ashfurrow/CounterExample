@@ -14,6 +14,8 @@ struct CounterReducer: Reducer {
         switch action {
         case _ as CounterActionAdd:
             state.counters += [0]
+        case let delete as CounterActionDelete:
+            state.counters.remove(at: delete.index)
         case let increase as CounterActionIncrease:
             state.counters[increase.index] += 1
         case let decrease as CounterActionDecrease:

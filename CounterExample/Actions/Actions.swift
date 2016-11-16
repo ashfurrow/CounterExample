@@ -8,3 +8,6 @@ struct CounterActionDecrease: Action {
     let index: Int
 }
 struct CounterActionAdd: Action {}
+struct CounterActionDelete: Action {
+    let index: Int
+}
