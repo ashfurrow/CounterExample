@@ -63,7 +63,9 @@
                             <outlet property="delegate" destination="IYC-Dw-0s7" id="0RE-Jx-ikn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="qzY-A3-3ki"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="qzY-A3-3ki">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="p8b-Fk-PTX"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kf2-YS-ERC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
