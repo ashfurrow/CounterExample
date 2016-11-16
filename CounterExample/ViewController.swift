@@ -29,14 +29,23 @@ class ViewController: UITableViewController, StoreSubscriber {
     }
     
     @IBAction func addCounter(_ sender: UIBarButtonItem) {
+        mainStore.dispatch(CounterActionAdd())
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return mainStore.state.counters.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
+
+        cell.label.text = String(mainStore.state.counters[indexPath.row])
+        cell.stepperChangedClosure = { change in
+            switch change {
+            case .increase: mainStore.dispatch(CounterActionIncrease(index: indexPath.row))
+            case .decrease: mainStore.dispatch(CounterActionDecrease(index: indexPath.row))
+            }
+        }
 
         return cell
     }
